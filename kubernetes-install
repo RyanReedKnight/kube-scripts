@@ -1,4 +1,4 @@
-
+#!/bin/bash
 
 # Just a script to do whats here https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 
