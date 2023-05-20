@@ -1,4 +1,7 @@
-#!/bash/bin
+#!/bin/bash
 
-TARGET="/etc/containerd/config.toml"
-containerd config default | tee $TARGET
+TARGET_DIR="/etc/containerd"
+TARGET_FILE="$TARGET_DIR/config.toml"
+
+mkdir -p $TARGET_DIR
+containerd config default | tee $TARGET_FILE
