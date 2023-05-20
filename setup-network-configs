@@ -1,6 +1,8 @@
-#!/bash/bin
+#!/bin/bash
 
 TARGET="/etc/sysctl.d/99-kubernetes-cri.conf"
+
+echo "Setting configs for $TARGET"
 
 echo "net.bridge.bridge-nf-call-iptables = 1" >> $TARGET
 echo "net.ipv4.ip_forward = 1" >> $TARGET
