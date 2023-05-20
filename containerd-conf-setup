@@ -1,0 +1,4 @@
+#!/bash/bin
+
+TARGET="/etc/containerd/config.toml"
+containerd config default | tee $TARGET

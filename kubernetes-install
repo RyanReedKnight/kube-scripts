@@ -1,0 +1,20 @@
+
+
+# Just a script to do whats here https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
+
+apt-get update
+apt-get install -y apt-transport-https ca-certificates curl
+
+# Get gpg key
+curl -fsSLo /etc/apt/keyrings/kubernetes-archive-keyring.gpg\
+ https://packages.cloud.google.com/apt/doc/apt-key.gpg
+
+# Add repo
+echo "deb [signed-by=/etc/apt/keyrings/kubernetes-archive-keyring.gpg]\
+ https://apt.kubernetes.io/ kubernetes-xenial main" |\
+ sudo tee /etc/apt/sources.list.d/kubernetes.list
+
+# Install and mark
+apt update
+apt-get install kubelet kubeadm kubectl
+apt-mark hold kubelet kubeadm kubectl

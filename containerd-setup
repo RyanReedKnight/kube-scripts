@@ -1,0 +1,10 @@
+#!/bash/bin
+
+# Enable necessary kernel modules
+
+echo "overlay" >> /etc/modules-load.d/containerd.conf
+echo "br_netfilter" >> /etc/modules-load.d/containerd.conf
+
+# Load modules now.
+modprobe overlay
+modprobe br_netfilter

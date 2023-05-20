@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo "" >> /etc/hosts
+echo "192.168.122.194	k8-control" >> /etc/hosts
+echo "192.168.122.254	worker-a" >> /etc/hosts
+echo "192.168.122.205	worker-b" >> /etc/hosts
