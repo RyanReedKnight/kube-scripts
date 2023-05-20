@@ -12,7 +12,7 @@ apt-get update
 apt-get install -y apt-transport-https ca-certificates curl
 
 # Get gpg key
-curl -fsSLo $KEY_RING $KEY_RING_ORIGIN
+curl -fsSLo $KEY_RING_ORIGIN | apt key add -
  
 
 # Add repo
