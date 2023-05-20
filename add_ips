@@ -1,6 +1,5 @@
-#!/bin/bash
-
+# This is for a KVM network I am using
 echo "" >> /etc/hosts
-echo "192.168.122.194	k8-control" >> /etc/hosts
-echo "192.168.122.254	worker-a" >> /etc/hosts
-echo "192.168.122.205	worker-b" >> /etc/hosts
+echo "192.168.122.93	k8-control" >> /etc/hosts
+echo "192.168.122.117	worker-a" >> /etc/hosts
+echo "192.168.122.114	worker-b" >> /etc/hosts
