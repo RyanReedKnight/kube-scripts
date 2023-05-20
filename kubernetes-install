@@ -13,7 +13,7 @@ apt-get install -y apt-transport-https ca-certificates curl
 
 # Get gpg key
 echo "Getting key from $KEY_RING_ORIGIN$"
-curl -fsSLO $KEY_RING $KEY_RING_ORIGIN
+curl -fsSLo $KEY_RING $KEY_RING_ORIGIN
  
 
 # Add repo
