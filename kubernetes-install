@@ -3,7 +3,7 @@
 # Just a script to do whats here https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 
 KEY_RING_ORIGIN="https://packages.cloud.google.com/apt/doc/apt-key.gpg"
-KEY_RING="/etc/apt/keyrings/kubernetes-archive-keyring.gpg "
+KEY_RING="/usr/share/keyrings/kubernetes-archive-keyring.gpg "
 REPO="https://apt.kubernetes.io/ kubernetes-xenial main"
 REPO_CONF="/etc/apt/sources.list.d/kubernetes.list"
 PACKAGES="kubelet kubeadm kubectl"
