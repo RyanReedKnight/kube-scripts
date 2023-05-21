@@ -17,7 +17,7 @@ curl -fsSLo $KEY_RING $KEY_RING_ORIGIN
  
 
 # Add repo
-echo "deb [signed-by=$KEY_RING] $REPO | sudo tee $REPO_CONF"
+echo "deb [signed-by=$KEY_RING] $REPO" | sudo tee $REPO_CONF
 
 # Install and mark
 apt update
