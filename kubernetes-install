@@ -3,7 +3,7 @@
 # Just a script to do whats here https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/install-kubeadm/
 
 KEY_RING_ORIGIN="https://packages.cloud.google.com/apt/doc/apt-key.gpg"
-KEY_RING="/etc/apt/keyrings/kubernetes-archive-keyring.gpg"
+KEY_RING="/usr/share/keyrings/cloud.google.gpg"
 REPO="https://apt.kubernetes.io/ kubernetes-xenial main"
 REPO_CONF="/etc/apt/sources.list.d/kubernetes.list"
 PACKAGES="kubelet kubeadm kubectl"
@@ -14,6 +14,8 @@ apt-get install -y apt-transport-https ca-certificates curl
 # Get gpg key
 echo "Getting key from $KEY_RING_ORIGIN$"
 curl -fsSLo $KEY_RING $KEY_RING_ORIGIN
+curl $KEY_RING_ORIGIN | sudo apt-key --keyring $KEY_RING add -
+
  
 
 # Add repo
