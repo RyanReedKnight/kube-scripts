@@ -1,5 +1,6 @@
 # This is for a KVM network I am using
 echo "" >> /etc/hosts
+echo "IPs for other vms in network" >> /etc/hosts
 echo "192.168.122.201	k8-control" >> /etc/hosts
-echo "192.168.122.95	worker-a" >> /etc/hosts
+echo "192.168.122.195	worker-a" >> /etc/hosts
 echo "192.168.122.233	worker-b" >> /etc/hosts
