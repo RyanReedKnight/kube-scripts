@@ -1,5 +1,5 @@
 # This is for a KVM network I am using
 echo "" >> /etc/hosts
-echo "192.168.122.93	k8-control" >> /etc/hosts
-echo "192.168.122.117	worker-a" >> /etc/hosts
-echo "192.168.122.114	worker-b" >> /etc/hosts
+echo "192.168.122.230	k8-control" >> /etc/hosts
+echo "192.168.122.95	worker-a" >> /etc/hosts
+echo "192.168.122.233	worker-b" >> /etc/hosts
