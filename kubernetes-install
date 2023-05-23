@@ -9,7 +9,7 @@ REPO_CONF="/etc/apt/sources.list.d/kubernetes.list"
 PACKAGES="kubelet kubeadm kubectl"
 
 apt-get update
-apt-get install -y apt-transport-https ca-certificates curl
+apt-get install -y gnupg gnupg2 gnupg1 apt-transport-https ca-certificates curl
 
 # Get gpg key
 echo "Getting key from $KEY_RING_ORIGIN$"
