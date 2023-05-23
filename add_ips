@@ -1,6 +1,11 @@
 # This is for a KVM network I am using
+
+K8_CONTROLLER=$1
+WORKER_A=$2
+WORKER_B=$3
+
 echo "" >> /etc/hosts
 echo "IPs for other vms in network" >> /etc/hosts
-echo "192.168.122.249	k8-control" >> /etc/hosts
-echo "192.168.122.233	worker-a" >> /etc/hosts
-echo "192.168.122.83	worker-b" >> /etc/hosts
+echo "192.168.122.$K8_CONTROLLER	k8-controller" >> /etc/hosts
+echo "192.168.122.$WORKER_A	worker-a" >> /etc/hosts
+echo "192.168.122.$WORKER_B	worker-b" >> /etc/hosts
