@@ -15,7 +15,7 @@ apt-get install -y gnupg gnupg2 gnupg1 apt-transport-https ca-certificates curl
 echo "Getting key from $KEY_RING_ORIGIN$"
 
 # Key put in manually while key is not working.
-#curl -fsSLo $KEY_RING $KEY_RING_ORIGIN
+curl -fsSLo $KEY_RING $KEY_RING_ORIGIN
 
  
 
